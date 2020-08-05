@@ -3,7 +3,9 @@ package com.binar.synrgyrecyclerview
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.football_club.view.*
 
 class FootballClubAdapter (val listFootbalClub: ArrayList<FootballClub>) : RecyclerView.Adapter<FootballClubAdapter.ViewHolder>() {
@@ -24,7 +26,11 @@ class FootballClubAdapter (val listFootbalClub: ArrayList<FootballClub>) : Recyc
     // mengisi setiap data tampilan yang ada
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemView.tvClubName.setText(listFootbalClub[position].clubName)
-        holder.itemView.tvPoint.setText(listFootbalClub[position].clubPoint.toString())
+        holder.itemView.tvOrigin.setText(listFootbalClub[position].clubOrigin)
+        holder.itemView.image.setImageResource(listFootbalClub[position].clubImage)
+
 
     }
 }
+
+

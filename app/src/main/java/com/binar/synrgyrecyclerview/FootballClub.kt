@@ -1,3 +1,5 @@
 package com.binar.synrgyrecyclerview
 
-data class FootballClub(val clubName: String, val clubPoint: Int)
+import android.widget.ImageView
+
+data class FootballClub(val clubName: String, val clubOrigin: String, var clubImage : Int)
