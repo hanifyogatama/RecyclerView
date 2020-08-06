@@ -13,12 +13,8 @@ class FootballClubAdapter(val listFootbalClub: ArrayList<FootballClub>) :
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {}
 
     // method yang menyiapkan layout baris
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): FootballClubAdapter.ViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.football_club, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FootballClubAdapter.ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.football_club, parent, false)
         return ViewHolder(view)
     }
 
